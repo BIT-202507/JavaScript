@@ -5,6 +5,7 @@
  * 4. Se recomienda usar todos los nombres en MAYUSCULAS para las constantes, si la palabra es compuesta CANT_PRODUCTOS
  * 5. No usar como nombre las palabras reservadas del lenguaje.
  * 6. No nombrar dos variables o funciones con el mismo nombre
+ * 7. Los nombres no pueden iniciar con un numero
 */
 
 /** En JavaScript hay 2 maneras de definir una variable */

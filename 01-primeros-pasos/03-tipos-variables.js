@@ -24,14 +24,14 @@
          let tsAge: number = 46;
          let tsHeight: number = 1.67;     
          let tsNullValue: null = null;   
-         let tsUndefinedValue: undefined = undefined; 
-         let tsOtherValue: number = NaN;   
+         
+         // TODO: Revisar undefined y NaN son tipos primitivos en TypeScript
          let tsBigNumberValue: bigint = 9007199254740991n; 
          let tsSymbolValue: symbol = Symbol('mi-simbolo'); 
 
 //    Tipos Complejos:
          let tsFruits: string[] = [ 'orange', 'pinapple', 'banana', 'apple' ]; 
-         let tsPersona: { name: string; age: number } = { name: 'Juan', age: 46 }; 
+         let tsPersona: { name: string; age?: number } = { name: 'Juan', age: 46 }; 
          function tsGreet(): void {      
              console.log('Hello!');
          }        
