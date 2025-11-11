@@ -10,7 +10,7 @@ let mensaje = '';
 if( numero1 % 3 == 0 )
     mensaje += 'bing';      // mensaje = mensaje + 'bing';
 if( numero1 % 5 == 0 ) 
-    mensaje += 'bong';
+    mensaje += 'bong';      // mensaje = mensaje + 'bong';
 
 if( ! mensaje )
     console.log( numero1 );
