@@ -12,12 +12,12 @@
 
 const nums = [ 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1 ];
 
-let contador = 0;       // Contador
+let total = 0;       // Acumulador
 
 for( let k of nums ) {
     if( k == 1 ) {
-        contador++;
+        total += k;     // total = total + k    (Solo funciona si todos numeros son 1 o 0)
     }
 }
 
-console.log( contador );
+console.log( total );
