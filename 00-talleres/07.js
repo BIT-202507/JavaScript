@@ -18,11 +18,14 @@ let numero2 = Number( prompt( 'Digite numero donde va a finalizar el rango' ) );
 
 
 if( numero1 > numero2 ) {
-    let temp = numero1;
-    numero1 = numero2;
-    numero2 = temp;
+    // 15 / 3 
+    for( let i = numero1; i >= numero2; i-- ) {
+        console.log( i );
+    }
+}
+else {
+    for( let i = numero1; i <= numero2; i++ ) {
+        console.log( i );
+    }
 }
 
-for( let i = numero1; i <= numero2; i++ ) {
-    console.log( i );
-}
