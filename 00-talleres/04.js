@@ -5,16 +5,14 @@
 //    - Si no cumple ninguna de las condiciones anteriores debe imprimir el mismo número.
 
 const numero1 = parseInt( prompt( `Ingresa un numero` ) );
+let mensaje = '';
 
-if( numero1 % 5 == 0 && ( numero1 % 3 == 0 ) ) {
-    console.log( 'bingbong' );
-}
-else if( numero1 % 5 == 0 ) {
-    console.log( 'bong' );
-}
-else if( numero1 % 3 == 0 ) {
-    console.log( 'bing' );
-}
-else {
+if( numero1 % 3 == 0 )
+    mensaje += 'bing';      // mensaje = mensaje + 'bing';
+if( numero1 % 5 == 0 ) 
+    mensaje += 'bong';
+
+if( ! mensaje )
     console.log( numero1 );
-}
+else
+    console.log( mensaje );
