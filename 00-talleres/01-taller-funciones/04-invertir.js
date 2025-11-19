@@ -12,12 +12,13 @@
 // 4
 
 function invertirArray( array ) {
-    const arrayInvertido = [];
+    let arrayInvertido = [];
     // console.log(array);
 
     for( let i = array.length - 1; i >= 0; i-- ) {
         // console.log( array[ i ] );
-        arrayInvertido.push( array[ i ] );
+        // arrayInvertido.push( array[ i ] );
+        arrayInvertido = [ ...arrayInvertido, array[ i ] ];
     } 
 
     return arrayInvertido;          //  [ 4, 3, 2, 1 ]
